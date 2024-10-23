@@ -1,3 +1,20 @@
+/* All New copmonent */
+.new-Comp-top-margin{
+  margin-top: 51px;
+}
+.short-com-top-margin{
+  padding: 21px;
+}
+
+.margin-left{
+  margin-left: 51px;
+}
+/* Home */
+.home-bg{
+  /* background-image: url("/public/images/firebg.jpg"); */
+  background-color: #000f23;
+}
+
 .App {
   text-align: center;
 }
@@ -7,11 +24,34 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Header  NavBar*/
+.navbar-brand {
+  color: rgba(253, 107, 10, 0.966) !important;
+    /* font-weight: 900 !important; */
+    font-family: "Poppins", Sans-serif;
+    font-size: 45px !important;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
+.navbar-img-border{
+  border: 1px solid black;
+}
+
+
+
+/* Target Nav links inside the navbar_Details class */
+.navbar_Details .nav-link {
+  font-size: 23px; /* Adjust size here */
+  font-weight: 700; /* You can also adjust the weight */
+  color:black;
+}
+
+/* Add hover or focus state if you want custom styles on interaction */
+.navbar_Details .nav-link:hover {
+  color: #ff6600; /* Example hover color */
+}
+
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +68,146 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.background-color-footer {
+  color: white;
+  background-color: transparent;
+  background-image: linear-gradient(160deg, #000f23 30%, #890226 100%);
+  
+}
+
+
+
+/* Slides */
+
+.slide-bg{
+  background-color: #000f23;
+}
+
+h3{
+  color: #000f23;
+}
+
+.slide-size{
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  margin-left: 10%;;
+}
+
+
+
+
+
+
+/*  About Us */
+.aboutus_container-fluid {
+  background-image: url('/src/image/career.jpg');
+  background-color: #302626;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; /* Added this to position overlay properly */
+}
+
+.aboutus_container-fluid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1;
+}
+
+.aboutus_container {
+  position: relative;
+  z-index: 2; /* Puts text on top of the overlay */
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  color: white;
+  opacity: 1;
+  padding: 30px;
+  text-align: center;
+  font-family: "Oxygen", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+h1, h3, h5 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Added shadow for better readability */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.abutus_button {
+  text-align: center;
+}
+
+.OurBusiness_text {
+  font-size: 25px;
+}
+
+
+  .OurBusiness_bgimg{
+    background-image: url('');
+
   }
-  to {
-    transform: rotate(360deg);
+
+  .OurBusiness_align .h1{
+    font-size: 31px;
   }
+
+
+  /* GROWTH */
+  .growh-element-title{
+    font-family: "Poppins", Sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+    color: #f46a09;
+  
+  }
+
+  .growth-element-img{
+    font-size: 3rem;
+  }
+
+  .growh-element-num{
+    font-family: "Poppins", Sans-serif;
+    font-size: 41px;
+    font-weight: bold;
+    color: #f46a09;
+    text-align: center;
+    margin-top: 21px;
+    margin-bottom: 21px;
+
+  }
+
+  .growth-element-exp{
+    font-family: "Poppins", Sans-serif;
+    font-size: 27px;
+    text-align: center;
+  }
+
+
+
+
+/* Footer */
+.widget_img _size{
+  text-size-adjust: 30ppx;
+}
+
+.widget-text-align{
+  text-align: left;
+  line-height: 37px;
 }
